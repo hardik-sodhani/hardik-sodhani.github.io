@@ -1,0 +1,27 @@
+{
+  "name": "hardik-sodhani.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardik-sodhani/hardik-sodhani.github.io.git"
+  },
+  "author": "Hardik Sodhani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardik-sodhani/hardik-sodhani.github.io/issues"
+  },
+  "homepage": "https://github.com/hardik-sodhani/hardik-sodhani.github.io#readme"
+}
