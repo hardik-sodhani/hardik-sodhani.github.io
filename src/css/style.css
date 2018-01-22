@@ -12,11 +12,19 @@
   transform: translate(-50%, -50%); }
 
 .personal-photo {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   display: block;
   margin: auto; }
+
+.company-logo {
+  height: 100px;
+  width: 500px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .section {
   padding-top: 4rem;
@@ -24,8 +32,19 @@
   max-width: 1200px;
   margin: 0 auto; }
 
+.profile-detail-container {
+  position: absolute;
+  bottom: 20px; }
+
+.profile-section .row {
+  min-height: 320px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif; }
 
 p {
-  font-family: 'Open Sans', serif; }
+  font-family: 'Open Sans', serif;
+  color: #666666; }
+
+.quoted-text {
+  color: #008B8B; }
