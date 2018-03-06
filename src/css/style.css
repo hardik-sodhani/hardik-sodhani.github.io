@@ -21,7 +21,10 @@
   top: 50%;
   transform: translate(40%, -50%); }
 
-.section:nth-of-type(3n) {
+.book-image {
+  width: 100%; }
+
+.section:nth-of-type(2n + 1) {
   background-color: #f2f2f2; }
 
 .home-name-intro {
@@ -35,20 +38,55 @@
 
 .personal-photo {
   width: 250px;
-  height: 250px;
   border-radius: 50%;
   display: block;
   margin: auto; }
+
+.card-flip:hover .flip,
+.card-flip.hover .flip {
+  transform: rotateY(180deg); }
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.card-back {
+  position: absolute; }
+
+.card-front {
+  z-index: 2;
+  transform: rotateY(0deg); }
+
+.card-back {
+  transform: rotateY(180deg); }
+
+.flip {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif; }
 
 p {
   font-family: 'Open Sans', serif;
-  color: #666666; }
+  color: #666666;
+  font-size: 1.125rem; }
 
 .quoted-text {
   color: #008B8B; }
+
+.secondary-heading {
+  color: #A0522D; }
+
+.text-size_x-large {
+  font-size: 3.5rem; }
+
+.text-size_large {
+  font-size: 3rem; }
 
 @-ms-viewport {
   width: device-width; }
@@ -839,4 +877,7 @@ html {
     margin-bottom: 2rem; }
   .company-logo,
   .school-logo {
-    display: none; } }
+    display: none; }
+  .skills-container,
+  .recommended-books-container {
+    display: block !important; } }

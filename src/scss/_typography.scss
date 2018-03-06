@@ -4,8 +4,21 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Open Sans', serif;
     color: $paragraph-text-color;
+    font-size: 1.125rem;
 }
 
 .quoted-text {
     color: $heading-color;
+}
+
+.secondary-heading {
+    color: $secondary-heading-color;
+}
+
+.text-size_x-large {
+    font-size: 3.5rem;
+}
+
+.text-size_large {
+    font-size: 3rem;
 }

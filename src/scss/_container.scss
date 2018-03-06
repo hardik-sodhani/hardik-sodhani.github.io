@@ -1,5 +1,5 @@
 .section {
-    &:nth-of-type(3n) {
+    &:nth-of-type(2n + 1) {
         background-color: $section-background-color;
     }
 }
@@ -19,8 +19,41 @@
 
 .personal-photo {
     width: 250px;
-    height: 250px;
     border-radius: 50%;
     display: block;
     margin: auto;
+}
+
+.card-flip {
+    &:hover .flip,
+    &.hover .flip {
+        transform: rotateY(180deg);
+    }
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card-back {
+    position: absolute;
+}
+
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
 }
