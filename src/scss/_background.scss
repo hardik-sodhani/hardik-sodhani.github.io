@@ -7,26 +7,20 @@
     position: relative;
 }
 
-.home-name-intro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.personal-photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-}
-
 .company-logo {
-    height: 100px;
+    height: auto;
     width: 500px;
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.school-logo {
+    height: auto;
+    width: 300px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(40%, -50%);
 }
