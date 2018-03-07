@@ -4,34 +4,55 @@
         <title>Hardik's Personal Webpage</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="src/css/bootstrap.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-        <link href="src/css/bootstrap.css" rel="stylesheet">
         <link href="src/css/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="personal-home-page">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutSection">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pastExperiencesSection">Past Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skillsSection">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#extraSection">Extra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactSection">Contact</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="home-hero-banner">
                 <div class="home-name-intro">
                     <p class="text-white">Hey, my name is</p>
                     <h1 class="text-white border border-white text-size_x-large">Hardik Sodhani</h1>
-                    <p class="text-white">and I'm a developer / gamer / gallivanter / bibliophile / Chicagoan</p>
+                    <p class="text-white font-italic">and I'm a developer / gamer / gallivanter / bibliophile / Chicagoan</p>
                     <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
                 </div>
             </div>
-            <div class="section profile-section py-5">
+            <span class="anchor" id="aboutSection"></span>
+            <div class="section profile-section py-5" id="aboutSection">
                 <div class="mt-5 container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-sm pt-4">
+                    <div class="row d-flex align-items-top">
+                        <div class="col-sm">
                             <h3 class="quoted-text">"So, tell me a little bit about yourself."</h3>
                             <p class="mt-4">
                                 I'm a graduate from the <span>University of Illinois</span> with a major in Computer Engineering, and a
-                                minor in Informatics. I work as full time <span>Front-End-Developer</span>, avidly trying to learn and keep
-                                up with the rapidly changing field. I am an enthusiast for the fields of augmented &amp; virtual reality,
-                                blockchain technology, and autonomous vehicles. 
+                                minor in Informatics. I currently work as full time <span>Front-End-Developer</span>, avidly trying to learn and keep
+                                up with the rapidly changing field. Along with my day-to-day responsibilities, I am an enthusiast for the fields 
+                                of augmented &amp; virtual reality, and blockchain technology. I'm amibitious about constantly learning new things, as
+                                well as sharing my knowledge with those I meet along the way.
                             </p>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm d-flex align-items-center">
                             <img class="personal-photo" src="/src/assets/my-headshot.jpg" alt="">
                         </div>
                         <div class="col-sm">
@@ -41,12 +62,15 @@
                                 immersing myself in whichever book I'm currently hooked on, or intensely playing
                                 console or PC games with my friends. I also try to frequent different coffee shops around
                                 Chicago over the weekend, and I'm on a never-ending quest to find the perfect moscow mule.
+                                Some hobbies I'm attempting to pick up are mixology, and watching something other than reruns
+                                of The Office on Netflix.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section experiences-section py-5">
+            <span class="anchor" id="pastExperiencesSection"></span>
+            <div class="section experiences-section py-5" id="pastExperiencesSection">
                 <div class="section-header">
                     <h2 class="quoted-text text-center">"Let's talk about what you've been up to all this time."</h2>
                 </div>
@@ -57,14 +81,13 @@
                         </div> -->
                         <div class="col-sm">
                             <h3 class="secondary-heading">Accenture</h3>
-                            <p>Front-End Developer (September 2016 - Present)</p>
-                            <p>Chicago, Illinois</p>
+                            <p class="font-italic">Front-End Developer (September 2016 - Present) - Chicago, Illinois</p>
                             <p>
                                 The intersection of consulting and software development has become a comfort zone for me in my career.
-                                On the business side, I've been exposed to client interactions and high-level discussions, led technical workshops and client
-                                demos for C-Suite executives, fellow employees, and high school children, and been provided opportunities
-                                for international business travel to lead &amp; implement workflows with development centers. All this,
-                                while doing software development for a field I am passionate about. I've experienced immense professional
+                                On the business side, I've been exposed to client interactions and high-level discussions, <span class="font-weight-bold teal-color">led technical workshops and client
+                                demos</span> for C-Suite executives, fellow employees, and high school children, and been provided opportunities
+                                for international business travel to <span class="font-weight-bold teal-color">lead &amp; implement workflows</span> with development centers. All this,
+                                while doing <span class="font-weight-bold teal-color">software development</span> for a field I am passionate about. I've experienced immense professional
                                 growth and exposure due to the fast nature of the consulting industry, and I'm excited to further hone my
                                 existing technical skills, as well as venture into new ones.
                             </p>
@@ -76,15 +99,14 @@
                         </div> -->
                         <div class="col-sm">
                             <h3 class="secondary-heading">Capital One</h3>
-                            <p>Technology Development Intern (Summer 2015)</p>
-                            <p>Rolling Meadows, Illinois</p>
+                            <p class="font-italic">Technology Development Intern (Summer 2015) - Rolling Meadows, Illinois</p>
                             <p>
                                 Capital One afforded me with an environment where I fell in love with front-end development.
-                                Using the MEAN stack to develop an internal web application with a fellow intern, I found the journey
+                                Using the <span class="font-weight-bold teal-color">MEAN stack</span> to develop an internal web application with a fellow intern, I found the journey
                                 unlike anything I had learned in school at the time. The company also did an amazing job
                                 spoiling the interns in the form of consistently planned outside-of-work events, happy hours, and
-                                team dinners. I learned first-hand the importance of working for an organization that takes
-                                the time and energy to invest in their employees' happiness, and promotes a culture that gets
+                                team dinners. I learned first-hand the <span class="font-weight-bold teal-color">importance of working for an organization</span> that takes
+                                the time and energy to <span class="font-weight-bold teal-color">invest in their employees' happiness</span>, and promotes a culture that gets
                                 people excited to show up for work in the morning.
                             </p>
                         </div>
@@ -95,14 +117,13 @@
                         </div> -->
                         <div class="col-sm">
                             <h3 class="secondary-heading">John Deere</h3>
-                            <p>Software Development Intern (Summer 2014)</p>
-                            <p>Urbandale, Iowa</p>
+                            <p class="font-italic">Software Development Intern (Summer 2014) - Urbandale, Iowa</p>
                             <p>
                                 My first adventure in the corporate world of software development was creating
-                                an autonomous defect generation tool, using Python scripts and SQL queries. This 3-month
-                                internship taught me a valuable skill that I've taken to heart throughout my future
-                                experience: adaptability. Having never written Python or SQL before, I learned the
-                                importance of being flexible and not being scared to dive into something new. I 
+                                an autonomous defect generation tool, using <span class="font-weight-bold teal-color">Python scripts and SQL queries</span>. This 3-month
+                                internship taught me a <span class="font-weight-bold teal-color">valuable skill</span> that I've taken to heart throughout my future
+                                experience: <span class="font-weight-bold teal-color">adaptability</span>. Having never written Python or SQL before, I learned the
+                                <span class="font-weight-bold teal-color">importance of being flexible</span> and not being scared to dive into something new. I 
                                 have my supportive team of engineers at Deere to thank for being patient with me and
                                 answering my endless questions on the languages used, being "agile", pair-programming, and
                                 working as a software developer. 
@@ -115,12 +136,11 @@
                         </div> -->
                         <div class="col-sm">
                             <h3 class="secondary-heading">University of Illinois at Urbana-Champaign</h3>
-                            <p>Urbana-Champaign, Illinois</p>
-                            <p>August 2012 - May 2016</p>
+                            <p class="font-italic">Champaign, Illinois (2012 - 2016)</p>
                             <p>
                                 I am forever grateful for the opportunity to attend the University of Illinois (UIUC), and for the education
-                                I received during my 4 years at the college. As important as my time was spent inside classes, it was the
-                                experiences I had outside of class that have taught me valuable life lessons I carry to this day.
+                                I received during my 4 years at the college. As <span class="font-weight-bold teal-color">important</span> as my time was spent inside classes, it was the
+                                <span class="font-weight-bold teal-color">experiences I had outside of class</span> that have taught me <span class="font-weight-bold teal-color">valuable life lessons</span> I carry to this day.
                                 I learned the importance of teamwork and working to strive towards a single goal during my 2 years
                                 as a performer for <span><a href="https://www.facebook.com/IBhangra/">Illini Bhangra</a></span>. Being a part
                                 of the largest student-run management consulting organization in the United States, <span><a href="http://www.ibc.illinois.edu/">Illinois Business Consulting</a></span>,
@@ -133,13 +153,14 @@
                     </div>
                 </div>
             </div>
-            <div class="section skills-section py-5">
+            <span class="anchor" id="skillsSection"></span>
+            <div class="section skills-section py-5" id="skillsSection">
                 <div class="section-header">
                     <h2 class="text-center quoted-text">"What skills do you possess in your arsenal?"</h2>
                 </div>
                 <div class="container d-flex skills-container">
                     <div class="mt-5 col">
-                        <h3 class="text-center mb-4 secondary-heading">Everyday Comfortability</h3>
+                        <h3 class="text-center mb-4 secondary-heading">Day-to-Day Comfort</h3>
                         <ul>
                             <li class="mb-3">HTML5</li>
                             <li class="mb-3">CSS3</li>
@@ -162,7 +183,8 @@
                     </div>
                 </div>
             </div>
-            <div class="section other-section py-5">
+            <span class="anchor" id="extraSection"></span>
+            <div class="section other-section py-5" id="extraSection">
                 <div class="section-header">
                     <h2 class="quoted-text text-center">"Is there anything else you'd like to share?"</h2>
                 </div>
@@ -222,13 +244,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <h3 class="secondary-heading text-center">I'm currently playing:</h3>
-                </div>
             </div>
-            <div class="section other-section py-5">
-                <div class="section-header">
+            <span class="anchor" id="contactSection"></span>
+            <div class="section other-section py-5" id="contactSection">
+                <div class="container">
                     <h2 class="quoted-text text-center">"How can we contact you?"</h2>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <h3 class="secondary-heading">Email:</h3>
+                            <p>sodhani.hardik@gmail.com</p>
+                            <h3 class="secondary-heading">Phone:</h3>
+                            <p>309.269.8054</p>
+                        </div>
+                        <div class="col">
+                            <h3 class="secondary-heading">Social Media:</h3>
+                            <p>
+                                <a href="https://www.facebook.com/hardik.sodhani" target="_blank"><i class="fa fa-facebook-square fa-2x social-media-icon"></i></a>
+                                <a href="www.linkedin.com/in/hardik-sodhani-b2841567" target="_blank"><i class="fa fa-linkedin-square fa-2x social-media-icon"></i></a>
+                                <a href="https://www.instagram.com/sodhani.hardik/" target="_blank"><i class="fa fa-instagram fa-2x social-media-icon"></i></a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

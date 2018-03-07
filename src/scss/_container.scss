@@ -24,10 +24,19 @@
     margin: auto;
 }
 
+// .card-flip {
+//     &:hover .flip,
+//     &.hover .flip {
+//         transform: rotateY(180deg);
+//     }
+// }
+
 .card-flip {
-    &:hover .flip,
-    &.hover .flip {
-        transform: rotateY(180deg);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    &:hover {
+        cursor: pointer;
     }
 }
 
@@ -41,6 +50,8 @@
 
 .card-back {
     position: absolute;
+    max-height: 100%;
+    overflow: scroll;
 }
 
 .card-front {
@@ -52,8 +63,21 @@
     transform: rotateY(180deg);
 }
 
-.flip {
+.card-flip.flip {
+    transform: rotateY(180deg);
     transition: 0.5s;
     transform-style: preserve-3d;
     position: relative;
+}
+
+.navbar-custom {
+    background-color: $black;
+    opacity: 0.8;
+    .nav-link {
+        color: $white;
+        &:hover {
+            cursor: pointer;
+            color: $heading-color;
+        }
+    }
 }

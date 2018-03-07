@@ -42,9 +42,12 @@
   display: block;
   margin: auto; }
 
-.card-flip:hover .flip,
-.card-flip.hover .flip {
-  transform: rotateY(180deg); }
+.card-flip {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative; }
+  .card-flip:hover {
+    cursor: pointer; }
 
 .card-front,
 .card-back {
@@ -54,7 +57,9 @@
   width: 100%; }
 
 .card-back {
-  position: absolute; }
+  position: absolute;
+  max-height: 100%;
+  overflow: scroll; }
 
 .card-front {
   z-index: 2;
@@ -63,10 +68,20 @@
 .card-back {
   transform: rotateY(180deg); }
 
-.flip {
+.card-flip.flip {
+  transform: rotateY(180deg);
   transition: 0.5s;
   transform-style: preserve-3d;
   position: relative; }
+
+.navbar-custom {
+  background-color: #000;
+  opacity: 0.8; }
+  .navbar-custom .nav-link {
+    color: #FFF; }
+    .navbar-custom .nav-link:hover {
+      cursor: pointer;
+      color: #008B8B; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif; }
@@ -76,7 +91,8 @@ p {
   color: #666666;
   font-size: 1.125rem; }
 
-.quoted-text {
+.quoted-text,
+.teal-color {
   color: #008B8B; }
 
 .secondary-heading {
@@ -881,3 +897,14 @@ html {
   .skills-container,
   .recommended-books-container {
     display: block !important; } }
+
+.social-media-icon {
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline;
+  margin-right: 0.5rem; }
+
+.anchor {
+  display: block;
+  margin-top: -56px;
+  height: 56px;
+  visibility: hidden; }
