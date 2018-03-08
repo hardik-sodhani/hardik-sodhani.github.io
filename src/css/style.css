@@ -52,6 +52,7 @@
 .card-front,
 .card-back {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   top: 0;
   left: 0;
   width: 100%; }
@@ -59,7 +60,7 @@
 .card-back {
   position: absolute;
   max-height: 100%;
-  overflow: scroll; }
+  overflow: hidden; }
 
 .card-front {
   z-index: 2;
@@ -73,6 +74,8 @@
   transition: 0.5s;
   transform-style: preserve-3d;
   position: relative; }
+  .card-flip.flip .card-back {
+    overflow: scroll; }
 
 .navbar-custom {
   background-color: #000;
@@ -895,16 +898,46 @@ html {
   .school-logo {
     display: none; }
   .skills-container,
+  .recommended-books-flex {
+    display: block !important; }
+  .nav-mobile {
+    display: block; }
+  .nav-hamburger-icon {
+    display: inline-block !important; }
+  .navbar-desktop {
+    display: none; }
+  .nav-link {
+    padding-left: 10px; } }
+
+@media (max-width: 767px) {
+  .personal-photo {
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  .introduction-flex-container {
+    display: block !important; }
   .recommended-books-container {
-    display: block !important; } }
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%; } }
 
 .social-media-icon {
   vertical-align: middle;
   vertical-align: -moz-middle-with-baseline;
   margin-right: 0.5rem; }
 
+.nav-hamburger-icon {
+  background: transparent;
+  border: 1px solid transparent;
+  width: 3rem;
+  display: none; }
+  .nav-hamburger-icon .fa-bars {
+    color: #FFF; }
+
 .anchor {
   display: block;
   margin-top: -56px;
   height: 56px;
   visibility: hidden; }
+
+.navbar-mobile > nav {
+  display: block; }

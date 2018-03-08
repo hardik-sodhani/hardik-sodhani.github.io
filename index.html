@@ -12,7 +12,10 @@
     <body>
         <div class="personal-home-page">
             <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
-                <ul class="nav">
+                <button data-toggle="collapse" class="nav-hamburger-icon" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-2x fa-bars"></i>
+                </button>
+                <ul class="nav navbar-desktop">
                     <li class="nav-item active">
                         <a class="nav-link" href="#aboutSection">About</a>
                     </li>
@@ -29,19 +32,40 @@
                         <a class="nav-link" href="#contactSection">Contact</a>
                     </li>
                 </ul>
+                <div class="collapse navbar-mobile" id="navbarSupportedContent">
+                    <ul class="nav nav-mobile">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#aboutSection">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pastExperiencesSection">Past Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skillsSection">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#extraSection">Extra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactSection">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <div class="home-hero-banner">
                 <div class="home-name-intro">
-                    <p class="text-white">Hey, my name is</p>
-                    <h1 class="text-white border border-white text-size_x-large">Hardik Sodhani</h1>
-                    <p class="text-white font-italic">and I'm a developer / gamer / gallivanter / bibliophile / Chicagoan</p>
-                    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                    <div class="container">
+                        <p class="text-white">Hey, my name is</p>
+                        <h1 class="text-white border border-white text-size_x-large">Hardik Sodhani</h1>
+                        <p class="text-white font-italic">and I'm a developer / gamer / gallivanter / bibliophile / Chicagoan</p>
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                    </div>
                 </div>
             </div>
             <span class="anchor" id="aboutSection"></span>
-            <div class="section profile-section py-5" id="aboutSection">
+            <div class="section profile-section py-5">
                 <div class="mt-5 container">
-                    <div class="row d-flex align-items-top">
+                    <div class="row d-flex align-items-top introduction-flex-container">
                         <div class="col-sm">
                             <h3 class="quoted-text">"So, tell me a little bit about yourself."</h3>
                             <p class="mt-4">
@@ -53,7 +77,7 @@
                             </p>
                         </div>
                         <div class="col-sm d-flex align-items-center">
-                            <img class="personal-photo" src="/src/assets/my-headshot.jpg" alt="">
+                            <img class="personal-photo" src="/src/assets/my-headshot.jpg" alt="A headshot of Hardik Sodhani, who is smiling while wearing a blazer over a white shirt.">
                         </div>
                         <div class="col-sm">
                             <h3 class="quoted-text">"How do you spend your time outside of work?"</h3>
@@ -70,12 +94,10 @@
                 </div>
             </div>
             <span class="anchor" id="pastExperiencesSection"></span>
-            <div class="section experiences-section py-5" id="pastExperiencesSection">
-                <div class="section-header">
+            <div class="section experiences-section py-5">
+                <div class="container">
                     <h2 class="quoted-text text-center">"Let's talk about what you've been up to all this time."</h2>
-                </div>
-                <div class="mt-5 container">
-                    <div class="row">
+                    <div class="mt-5  row">
                         <!-- <div class="col-sm">
                             <img class="company-logo" src="/src/assets/accenture-digital.png" alt="Accenture logo">
                         </div> -->
@@ -154,7 +176,7 @@
                 </div>
             </div>
             <span class="anchor" id="skillsSection"></span>
-            <div class="section skills-section py-5" id="skillsSection">
+            <div class="section skills-section py-5">
                 <div class="section-header">
                     <h2 class="text-center quoted-text">"What skills do you possess in your arsenal?"</h2>
                 </div>
@@ -167,7 +189,7 @@
                             <li class="mb-3">JavaScript</li>
                             <li class="mb-3">Responsive Design</li>
                             <li class="mb-3">Web Accessibility</li>
-                            <li class="mb-3">Version Control (GIT)</li>
+                            <li class="mb-3">Version Control (Git)</li>
                             <li class="mb-3">Bootstrap</li>
                         </ul>
                     </div>
@@ -184,13 +206,13 @@
                 </div>
             </div>
             <span class="anchor" id="extraSection"></span>
-            <div class="section other-section py-5" id="extraSection">
+            <div class="section other-section py-5">
                 <div class="section-header">
                     <h2 class="quoted-text text-center">"Is there anything else you'd like to share?"</h2>
                 </div>
-                <div class="container my-5">
+                <div class="container recommended-books-container my-5">
                     <h3 class="secondary-heading text-center">My Recommended Reading List: </h3>
-                    <div class="d-flex py-5 recommended-books-container">
+                    <div class="d-flex py-5 recommended-books-flex">
                         <div class="mx-3 my-3 card-flip">
                             <div class="flip">
                                 <div class="card-front">
@@ -246,7 +268,7 @@
                 </div>
             </div>
             <span class="anchor" id="contactSection"></span>
-            <div class="section other-section py-5" id="contactSection">
+            <div class="section other-section py-5">
                 <div class="container">
                     <h2 class="quoted-text text-center">"How can we contact you?"</h2>
                     <div class="row mt-5">
@@ -259,9 +281,9 @@
                         <div class="col">
                             <h3 class="secondary-heading">Social Media:</h3>
                             <p>
-                                <a href="https://www.facebook.com/hardik.sodhani" target="_blank"><i class="fa fa-facebook-square fa-2x social-media-icon"></i></a>
-                                <a href="www.linkedin.com/in/hardik-sodhani-b2841567" target="_blank"><i class="fa fa-linkedin-square fa-2x social-media-icon"></i></a>
-                                <a href="https://www.instagram.com/sodhani.hardik/" target="_blank"><i class="fa fa-instagram fa-2x social-media-icon"></i></a>
+                                <a href="https://www.facebook.com/hardik.sodhani" target="_blank" title="Link to Hardik's Facebook social media account"><i class="fa fa-facebook-square fa-2x social-media-icon"></i></a>
+                                <a href="https://www.linkedin.com/in/hardik-sodhani-b2841567" target="_blank" title="Link to Hardik's LinkedIn social media account"><i class="fa fa-linkedin-square fa-2x social-media-icon"></i></a>
+                                <a href="https://www.instagram.com/sodhani.hardik/" target="_blank" title="Link to Hardik's Instagram social media account"><i class="fa fa-instagram fa-2x social-media-icon"></i></a>
                             </p>
                         </div>
                     </div>

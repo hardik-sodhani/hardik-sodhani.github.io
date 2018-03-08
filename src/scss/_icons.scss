@@ -3,3 +3,14 @@
     vertical-align: -moz-middle-with-baseline;
     margin-right: 0.5rem;
 }
+
+.nav-hamburger-icon {
+    background: transparent;
+    border: 1px solid transparent;
+    width: 3rem;
+    display: none;
+
+    .fa-bars {
+        color: $white;
+    }
+}

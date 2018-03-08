@@ -1,6 +1,7 @@
 //sass imports
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss'; // for media query mixins
 
+// Mobile portrait breakpoint - max-width: 575px
 @include media-breakpoint-down(xs) {
     .home-name-intro {
         width: 100%;
@@ -16,7 +17,35 @@
         display: none;
     }
     .skills-container,
-    .recommended-books-container {
+    .recommended-books-flex {
         display: block !important;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    .nav-hamburger-icon {
+        display: inline-block !important;
+    }
+    .navbar-desktop {
+        display: none;
+    }
+    .nav-link {
+        padding-left: 10px;
+    }
+}
+
+// Mobile landscape breakpoint - max-width: 767px
+@include media-breakpoint-down(sm) {
+    .personal-photo {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .introduction-flex-container {
+        display: block !important;
+    }
+    .recommended-books-container {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
     }
 }
