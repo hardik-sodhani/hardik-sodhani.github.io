@@ -53,15 +53,17 @@
     position: absolute;
     max-height: 100%;
     overflow: hidden;
+    background-color: $white;
+    padding: 1rem;
+    transform: rotateY(180deg);
 }
 
 .card-front {
     z-index: 2;
     transform: rotateY(0deg);
-  }
-  
-.card-back {
-    transform: rotateY(180deg);
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 .card-flip.flip {
